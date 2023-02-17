@@ -16,7 +16,8 @@ Feature: Mobile Feature
    When Click on "Save and Continue" button
    When Choose a "CUR Chippie 7 - 2 year" option
    When Click on "Continue" button
-   When Click Custom "//*[@id='root']/div/main/section/section/div[1]/div[1]/div[2]/div/button/span[1]" option 
+   When Await "3" seconds
+   When Click on "Continue" button
    When Click on custom button "//*[@id='root']/div/main/section/section/div[2]/div/div/div[2]/div/div[1]/article/div[3]/button"
    When Click on "Continue" button
    When Select "selectNumber" radio button
@@ -41,4 +42,3 @@ Feature: Mobile Feature
    When Click on "Continue" button
    When Click on "Continue" button
    When Click on "Accept" button
-   When Close Navigator

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TV Feature
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.816 s <<< FAILURE! - in TV Feature
+TV Feature.TV Feature  Time elapsed: 14.816 s  <<< ERROR!
+org.openqa.selenium.support.ui.UnexpectedTagNameException: 
+Element should have been "select" but was "input"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown
+

@@ -2,6 +2,8 @@ package steps;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import settings.Environment;
 import utils.actions;
@@ -141,5 +143,13 @@ public class Common  extends actions{
     @When("^Close Navigator$")
     public void closeNavigator(){
         login.ClosedNavigation();
+    }
+
+    @When("^Await \"([^\"]*)\" seconds")
+    public void awaitSeconds(String dataString) throws InterruptedException {
+        //String to int
+        int seconds = Integer.parseInt(dataString);
+        Thread.sleep(seconds*1000);
+        System.out.println("Await "+seconds+" seconds");
     }
 }
