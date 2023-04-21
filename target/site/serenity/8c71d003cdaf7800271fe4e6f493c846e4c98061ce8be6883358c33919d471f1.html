@@ -156,7 +156,7 @@
         <span class="breadcrumbs"><a href="index.html">Home</a>
                 > Capability 
                 > <span
-                    class="truncate-60">Mobile (Tests With Errors)</span>
+                    class="truncate-60">Tv (Passing Tests)</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -188,7 +188,7 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='fa fa-tags'></i> Capability: Mobile (Tests With Errors)</h2>
+                <h2><i class='fa fa-tags'></i> Capability: Tv (Passing Tests)</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
@@ -199,7 +199,7 @@
                                     across 1 scenario
 
                                      |
-                                        <a href="cd18960f7c4e811c93f059f145c2826b318689f4337e6cc558b9fded396ec744.csv" title="Download CSV"> <i class="fa fa-download"
+                                        <a href="c1b14bdd02abeeb124654949ffec79ff8d8a298e8c5b33de5d94843d2828a547.csv" title="Download CSV"> <i class="fa fa-download"
                                                                                         title="Download CSV"></i></a>
 
                                     <p class="report-info"><i class="fas fa-info-circle"></i> Note that results include
@@ -235,10 +235,10 @@
                                                             </div>
                                                             <script>
 
-                                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
+                                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                                 // as you saw in the previous example
@@ -291,11 +291,12 @@
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="8c71d003cdaf7800271fe4e6f493c846e4c98061ce8be6883358c33919d471f1.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">100%</td>
                                                             </tr>
                                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -319,9 +320,8 @@
                                                                 <td class="automated-stats"> </td>
                                                             </tr>
                                                             <tr>
-                                                                            <td colspan="3"><a
-                                                                                    href="079f25b8da316ec597af9c0e48d5fd07c69b41b66d573ef871ed1855351fb9b5.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                            <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
                                                             </tr>
                                                             <tr>
@@ -332,12 +332,12 @@
                                                                 <td class="automated-stats">0</td>
                                                                 <td class="automated-stats"> </td>
                                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="432788a652cdc3fffee608ae80aa6db4cc7b92e22234bb1fedf444ee077b7486.html"><i
-                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
-                                                                    </td>
-                                                                <td class="automated-stats">1</td>
-                                                                <td class="automated-stats">100%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
                                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -356,43 +356,6 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <h3>Test Failure Overview</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <h4>Most Frequent Failures</h4>
-                                                        <table class="table">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td class="error-color top-list-title">
-                                                                    <a href="2b56b574d89834f6aa192f59fa6627b776a6c288e09dbc7d06c356f5bad5b3c0.html"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> No such element exception</a>
-                                                                </td>
-                                                                <td><span
-                                                                        class="badge failure-badge">1</span>
-                                                                </td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <h4>Most Unstable Features</h4>
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="failure-color top-list-title"><a
-                                                                            href="6d5993f34cef6e96c671e33a2ae5cf84416e0ae07ef5b8a8b5cbb0fc591ce216.html">Mobile Feature</a>
-                                                                    </td>
-                                                                    <td><span
-                                                                            class="badge failure-badge">100%</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
 
                                             </div>
                                         </div>
@@ -414,18 +377,18 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result ERROR">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
-                                                            <a href="6d5993f34cef6e96c671e33a2ae5cf84416e0ae07ef5b8a8b5cbb0fc591ce216.html">Mobile Feature</a>
+                                                            <a href="2c8a95c79964a066fd6942695c655bfa3c738e5fbdb012ea3ec10a3fe1650312.html">TV Feature</a>
                                                     </td>
                                                     <td>
-                                                        <a href="369c50fc8a7abf79f369a20810134075673634ad7b2c081759d4160907fa6af3.html">Mobile Feature</a>
+                                                        <a href="79621a4401d57fcd78815b2afc69d80bea79c465f79ae1872e2c108f3f53ac01.html">TV Feature</a>
                                                     </td>
-                                                    <td>42</td>
-                                                    <td>16:55:02</td>
-                                                    <td>50s 327ms</td>
-                                                    <td><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
-                                                            style="display:none">ERROR</span></td>
+                                                    <td>43</td>
+                                                    <td>08:44:37</td>
+                                                    <td>57s 042ms</td>
+                                                    <td><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
                                                 </tr>
                                                 </tbody>
                                             </table>

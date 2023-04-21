@@ -25,7 +25,7 @@ Feature: TV Feature
     When Click on "Continue" button
     When Choose a "TV Essential" option
     When Click on "Continue" button
-    When Await "3" seconds
+    When Select items "Asian Pack;PSTV;Adult;RAI ITALIA"
     When Click on "Continue" button
     When Click on "Proceed to checkout" button
     When Select "Mr" from selectId "salutation"

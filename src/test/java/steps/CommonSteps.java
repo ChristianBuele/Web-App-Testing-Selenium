@@ -1,5 +1,6 @@
 package steps;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -51,6 +52,14 @@ public class CommonSteps  extends actions{
         Click(select);
     }
 
+    @When("^Select items \"([^\"]*)\"")
+    public void selectItems(String data){
+        String[] items=data.split(";");
+        for (String item : items) {
+            By select=By.xpath("//*[contains(text(), '" + item + "')]");
+            Click(select);
+        }
+    }
     
 
     @When("^Click on \"([^\"]*)\" button$")//continue or save and continue button or custom name
