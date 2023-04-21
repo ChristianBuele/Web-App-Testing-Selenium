@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="TV Feature" skipped="0" tests="1" time="14.68" timestamp="2023-02-17 06:04:48"><testcase name="TV Feature"><error type="net.serenitybdd.core.exceptions.UnrecognisedException"/><system-err>null&#13;
-amdocs@1.0-SNAPSHOT/utils.actions.SelectText(actions.java:74)&#13;
-amdocs@1.0-SNAPSHOT/steps.Common.selectOption(Common.java:45)&#13;
-✽.Select "ST. MARYS" from selectId "react-select-4-input"(file:///D:/Testing/Amdocs%20Testing/amdocs/src/test/resources/features/TV/Tv.feature:18)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="TV Feature" skipped="0" tests="1" time="61.55" timestamp="2023-04-21 08:38:44"><testcase name="TV Feature"/></testsuite>

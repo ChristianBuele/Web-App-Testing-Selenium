@@ -1,4 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Mobile Feature","Mobile Feature","ERROR","2023-02-17T18:04:48.7152411-05:00[America/Bogota]","0.0","28.8"
+"FixedLine Feature","FixedLine Feature","ERROR","2023-03-02T17:29:40.2970659-05:00[America/Bogota]","0.0","43.64"
+"Mobile Feature","Mobile Feature","ERROR","2023-03-02T16:55:02.7683545-05:00[America/Bogota]","0.0","50.33"
+"Pruebas Feature","Pruebas Feature","SUCCESS","2023-03-03T10:02:18.7966068-05:00[America/Bogota]","0.0","6.14"
 "TV Feature","Mobile Feature","ERROR","2023-02-17T18:03:14.3300538-05:00[America/Bogota]","0.0","6.75"
-"TV Feature","TV Feature","ERROR","2023-02-17T18:04:48.5792413-05:00[America/Bogota]","0.0","14.68"
+"TV Feature","TV Feature","ERROR","2023-04-20T12:21:41.1686624-05:00[America/Bogota]","0.0","30.51"

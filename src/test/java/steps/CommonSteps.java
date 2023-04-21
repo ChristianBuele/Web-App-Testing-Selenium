@@ -3,11 +3,10 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import settings.Environment;
 import utils.actions;
-public class Common  extends actions{
+public class CommonSteps  extends actions{
     WebDriver driver;
     Environment login = new Environment();
 
@@ -20,11 +19,13 @@ public class Common  extends actions{
         login.NavigationTo();
     }
 
-    @When("^Click on Sing In button$")
-    public void isclick() throws Throwable {
-        By buttonloginXpBy= By.xpath("//*[@id='kc-login']");
-        Click(buttonloginXpBy);
+    @When("^Write \"([^\"]*)\" in text box with id \"([^\"]*)\"$")
+    public void writeText(String text,String element){
+        By textBy=By.id(element);
+        writeText(textBy,text);
     }
+
+    
     @When("^Click Custom \"([^\"]*)\" option$")
     public void chooseMarket(String path) throws Throwable {
         By marketBy= By.xpath(path);
@@ -50,16 +51,12 @@ public class Common  extends actions{
         Click(select);
     }
 
-    @When("^Write \"([^\"]*)\" in text box with id \"([^\"]*)\"$")
-    public void writeText(String text,String element){
-        By textBy=By.id(element);
-        writeText(textBy,text);
-    }
+    
 
     @When("^Click on \"([^\"]*)\" button$")//continue or save and continue button or custom name
     public void clickOnContinueButton(String buttonName) throws Throwable {
         By buttonloginXpBy= By.xpath("//*[contains(text(), '" + buttonName + "')]");
-        Click(buttonloginXpBy);
+        ClickTest(buttonloginXpBy);
     }
     @When("^Click on custom button \"([^\"]*)\"$")//continue or save and continue button or custom name
     public void clickOnCustomButton(String path) throws Throwable {
@@ -68,19 +65,14 @@ public class Common  extends actions{
         Click(buttonloginXpBy);
     }
 
-    @Then("^Choose Power your products Addons")
+    @When("^Choose Power your products Addons")
     public void isChooseAddonsProduct() throws Throwable {
         By choosAddonsProductByXPat = By.xpath("//*[@id='root']/div/main/section/section/div[2]/div/div/div/div[2]/div[2]/div/div[2]");
         MultipleClick(choosAddonsProductByXPat,2);
     }
    
 
-    @When("^Chick on Bring Your Own Device")
-    public void chooseDevice() throws Throwable {
-        By chooseDeviceByXPat = By.xpath("//*[@id='root']/div/main/section/section/div[2]/div/div");
-        MultipleClick(chooseDeviceByXPat,0);
-    }
-
+    
     @When("^Verify Aditional Line")
     public void verifyAditionalLine() throws Throwable {
         By verifyAditionalLineByXPat = By.xpath("/html/body/div[2]/div/div[2]/div");

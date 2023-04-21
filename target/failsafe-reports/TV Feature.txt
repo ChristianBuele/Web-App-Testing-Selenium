@@ -1,11 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TV Feature
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.816 s <<< FAILURE! - in TV Feature
-TV Feature.TV Feature  Time elapsed: 14.816 s  <<< ERROR!
-org.openqa.selenium.support.ui.UnexpectedTagNameException: 
-Element should have been "select" but was "input"
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.63 s <<< FAILURE! - in TV Feature
+TV Feature.TV Feature  Time elapsed: 30.63 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer.identification.identificationType (tried for 15 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#customer\.identification\.identificationType"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: driver.version: unknown
+System info: host: 'CHRISTIANBUELE', ip: '60.60.100.222', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\chris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab1c2c307e515433c5ac15ae3907787c
+*** Element info: {Using=id, value=customer.identification.identificationType}
 

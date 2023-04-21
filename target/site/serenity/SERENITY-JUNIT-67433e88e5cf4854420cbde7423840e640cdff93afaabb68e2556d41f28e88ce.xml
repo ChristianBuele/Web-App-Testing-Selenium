@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="FixedLine Feature" skipped="0" tests="1" time="43.64" timestamp="2023-03-02 05:29:40"><testcase name="FixedLine Feature"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]&quot;}&#10;  (Session info: chrome=110.0.5481.178)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\chris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9a8fc7c7505f0b482352dbc9880e3a63&#10;*** Element info: {Using=xpath, value=//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]}&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\chris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a8fc7c7505f0b482352dbc9880e3a63
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown</error><system-err>no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\chris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a8fc7c7505f0b482352dbc9880e3a63
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Complementary Fixed Voice Prepaid (Fi)')]}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIAN_BUELE', ip: '60.60.100.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown&#13;
+utils.actions.Click(actions.java:27)&#13;
+steps.CommonSteps.chooseACustomOption(CommonSteps.java:39)&#13;
+✽.Choose a "Complementary Fixed Voice Prepaid (Fi)" option(file:///D:/Testing/Amdocs%20Testing/amdocs/src/test/resources/features/FixedLine/FixedLine.feature:24)&#13;
+</system-err></testcase></testsuite>

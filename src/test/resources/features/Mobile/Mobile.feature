@@ -2,6 +2,7 @@ Feature: Mobile Feature
   Background:
     Given Start Navigator
   Scenario: Mobile Feature
+  When Read Imei
    When Write "ocastro@flow.com" in text box with id "username"
    When Write "12345" in text box with id "password"
    When Click on Sing In button
@@ -36,7 +37,7 @@ Feature: Mobile Feature
    When Select "English" from selectId "languagePreference"
    When Click on "Continue" button
    When Scan products
-   When Write "89599910000000003638" in text box with id "serialNo"
+   When Write Imei in text box with id "serialNo"
    When Click on "Confirm" button
    When Click on "Continue" button
    When Click on "Continue" button
