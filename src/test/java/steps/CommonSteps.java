@@ -20,6 +20,11 @@ public class CommonSteps  extends actions{
         login.NavigationTo();
     }
 
+    @Given("^Open develop console")
+    public void openConsole(){
+        openConsoleDevelop();
+    }
+
     @When("^Write \"([^\"]*)\" in text box with id \"([^\"]*)\"$")
     public void writeText(String text,String element){
         By textBy=By.id(element);

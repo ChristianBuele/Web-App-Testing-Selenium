@@ -2,6 +2,7 @@ Feature: TV Feature
   Background:
     Given Start Navigator
   Scenario: TV Feature
+    When Open develop console
     When Write "ocastro@flow.com" in text box with id "username"
     When Write "12345" in text box with id "password"
     When Click on Sing In button
@@ -16,12 +17,12 @@ Feature: TV Feature
     When Select "Taxable" from selectId "taxException"
     When Click on "Save and Continue" button
     When Verify existing account "No"
-    When Select "ST. GEORGE" from selectId "county"
-    When Select "BARNES HILL VILLAGE" from selectId "area"
-    When Select sugestion "BARN" from id "streetName"
-    When Write "BSN-21WQ" in text box with id "houseNumber"
+    When Select "ST. GEORGE" from selectId "address.county"
+    When Select "BARNES HILL VILLAGE" from selectId "address.area"
+    When Select sugestion "BARN" from id "address.streetName"
+    When Write "BSN-21WQ" in text box with id "address.houseNumber"
     When Click on "Continue" button
-    When Await "3" seconds
+    When Await "4" seconds
     When Click on "Continue" button
     When Choose a "TV Essential" option
     When Click on "Continue" button

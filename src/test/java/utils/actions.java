@@ -22,18 +22,26 @@ public class actions {
     public void writeText(By elementLocation, String text) {
         webDriver.getDriver().findElement(elementLocation).sendKeys(text);
     }
-    public void waitForServices(){
+
+    public void openConsoleDevelop() {
+        Actions actions = new Actions(webDriver.getDriver());
+        actions.sendKeys(Keys.F12).build().perform();
+    }
+
+    public void waitForServices() {
         WebDriverWait wait = new WebDriverWait(webDriver.getDriver(), 10);
         wait.until(webDriver -> {
             // Verifica si todos los servicios han terminado de cargar
             return ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0");
         });
     }
+
     public void Click(By elementLocator) {
         webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement element = webDriver.getDriver().findElement(elementLocator);
         element.click();
     }
+
     public void ClickTest(By elementLocator) {
         webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement element = webDriver.getDriver().findElement(elementLocator);
@@ -97,11 +105,12 @@ public class actions {
         select.selectByVisibleText(NameLocator);
 
     }
-    public void selectSchedule(By element){
+
+    public void selectSchedule(By element) {
         webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         List<WebElement> items = webDriver.getDriver().findElement(element).findElements(By.xpath("./child::*"));
         System.out.println("Se realiza la busqueda de shecdules");
-        if(items.isEmpty()==false){
+        if (items.isEmpty() == false) {
             System.out.println("Se hace click");
             System.out.println(items.get(0).getText());
             items.get(0).click();
@@ -131,7 +140,7 @@ public class actions {
         WebElement input = webDriver.getDriver().findElement(element);
         input.sendKeys(text);
         WebDriverWait wait = new WebDriverWait(webDriver.getDriver(), 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("streetName-listbox")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("address.streetName-listbox")));
         System.out.println("Buscando la sugerencia");
         // Selecciona la primera sugerencia
         input.sendKeys(Keys.ARROW_DOWN);
