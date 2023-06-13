@@ -292,7 +292,7 @@
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                                href="79621a4401d57fcd78815b2afc69d80bea79c465f79ae1872e2c108f3f53ac01.html"
                                                                                                title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                                                <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
                                                                                                 </a>
 
 
@@ -314,7 +314,7 @@
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="c9a69313-12e9-450e-9eda-6200cc86db55" ></a>
+                                                        <a name="78e39c05-b21e-4e90-90ee-908754796564" ></a>
                                                             <div class="scenario-docs card">
                                                                 <div class="scenario-docs card-header"
                                                                      style="min-height:1.5em;">
@@ -329,7 +329,7 @@
 
 
                                                             <div class="scenario-docs card" id="d3d359a39d923cf5943446d2d3c0e0c1a6f765318a5ec7e2a9f75c67dfcaa87c">
-                                                                <div class="scenario-docs card-header success"
+                                                                <div class="scenario-docs card-header error"
                                                                      style="min-height:1.5em;">
                                                                     <div>
                                                             <span class="scenario-heading">
@@ -339,35 +339,39 @@
                                                                         <span class="scenario-result-icon">
                                                                 
 
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                                <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
                                                             </span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="scenario-docs card-body">
+                                                                        <p>When Open develop console</p>
                                                                         <p>When Write &quot;ocastro@flow.com&quot; in text box with id &quot;username&quot;</p>
                                                                         <p>When Write &quot;12345&quot; in text box with id &quot;password&quot;</p>
                                                                         <p>When Click on Sing In button</p>
-                                                                        <p>When Click Custom &quot;//*[@id='root']/main/div/section/div[2]/div[2]/div/div[2]/button/img&quot; option</p>
+                                                                        <p>When Await &quot;3&quot; seconds</p>
+                                                                        <p>When Click on &quot;Antigua&quot; button</p>
                                                                         <p>When Await &quot;3&quot; seconds</p>
                                                                         <p>When Choose a &quot;TV&quot; option</p>
                                                                         <p>When Select &quot;Passport Number&quot; from selectId &quot;customer.identification.identificationType&quot;</p>
-                                                                        <p>When Write &quot;0105211783&quot; in text box with id &quot;customer.identification.identificationNumber&quot;</p>
+                                                                        <p>When Write &quot;LKJDKSF32&quot; in text box with id &quot;customer.identification.identificationNumber&quot;</p>
                                                                         <p>When Write &quot;12/30/2026&quot; in text box with id &quot;customer.identification.expirationDate&quot;</p>
                                                                         <p>When Write &quot;Jhommyy&quot; in text box with id &quot;customer.firstName&quot;</p>
                                                                         <p>When Write &quot;Smitherss&quot; in text box with id &quot;customer.lastName&quot;</p>
                                                                         <p>When Select &quot;Taxable&quot; from selectId &quot;taxException&quot;</p>
+                                                                        <p>When Await &quot;3&quot; seconds</p>
                                                                         <p>When Click on &quot;Save and Continue&quot; button</p>
                                                                         <p>When Verify existing account &quot;No&quot;</p>
-                                                                        <p>When Select &quot;ST. GEORGE&quot; from selectId &quot;county&quot;</p>
-                                                                        <p>When Select &quot;BARNES HILL VILLAGE&quot; from selectId &quot;area&quot;</p>
-                                                                        <p>When Select sugestion &quot;BARN&quot; from id &quot;streetName&quot;</p>
-                                                                        <p>When Write &quot;BSN-21WQ&quot; in text box with id &quot;houseNumber&quot;</p>
+                                                                        <p>When Select &quot;ST. GEORGE&quot; from selectId &quot;address.county&quot;</p>
+                                                                        <p>When Select &quot;BARNES HILL VILLAGE&quot; from selectId &quot;address.area&quot;</p>
+                                                                        <p>When Select sugestion &quot;BARN&quot; from id &quot;address.streetName&quot;</p>
+                                                                        <p>When Write &quot;BSN-21WQ&quot; in text box with id &quot;address.houseNumber&quot;</p>
                                                                         <p>When Click on &quot;Continue&quot; button</p>
-                                                                        <p>When Await &quot;3&quot; seconds</p>
+                                                                        <p>When Await &quot;4&quot; seconds</p>
                                                                         <p>When Click on &quot;Continue&quot; button</p>
                                                                         <p>When Choose a &quot;TV Essential&quot; option</p>
                                                                         <p>When Click on &quot;Continue&quot; button</p>
-                                                                        <p>When Await &quot;3&quot; seconds</p>
+                                                                        <p>When Select items &quot;Asian Pack;PSTV;Adult;RAI ITALIA&quot;</p>
+                                                                        <p>When Await &quot;6&quot; seconds</p>
                                                                         <p>When Click on &quot;Continue&quot; button</p>
                                                                         <p>When Click on &quot;Proceed to checkout&quot; button</p>
                                                                         <p>When Select &quot;Mr&quot; from selectId &quot;salutation&quot;</p>
@@ -405,10 +409,10 @@
                                                 </div>
                                                 <script>
 
-                                                    var labels = ['50%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '50%', ' ', ' ', ' '];
+                                                    var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
                                                     // Our series array that contains series objects or in this case series data arrays
 
-                                                    var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                    var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 2}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                     // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                     // as you saw in the previous example
@@ -447,12 +451,11 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count">
-                                                                    <a href="89ce4a35375cf3e415db5fbe9574d68db234eac4a93907ae4b0096c6e88e1746.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">50%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -494,8 +497,8 @@
                                                                     <a href="989bc57c2a4be6e5cdc08b45074a9e15c0f85181375e195164956c39cc49058b.html"><i
                                                                                 class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">50%</td>
+                                                            <td class="automated-stats">2</td>
+                                                            <td class="automated-stats">100%</td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -528,11 +531,11 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td> 1m 3s</td>
-                                                            <td>62d  14h  41m 22s</td>
+                                                            <td> 1m 56s</td>
+                                                            <td>93d  17h  16m 41s</td>
                                                             <td>6s</td>
-                                                            <td>57s</td>
-                                                            <td>31s</td>
+                                                            <td> 1m 50s</td>
+                                                            <td>58s</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -556,16 +559,16 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result ERROR">
                                                                     <td>
                                                                             <a href="79621a4401d57fcd78815b2afc69d80bea79c465f79ae1872e2c108f3f53ac01.html">TV Feature</a>
                                                                     </td>
-                                                                    <td>42</td>
-                                                                    <td>08:44:37</td>
-                                                                    <td>57s 042ms</td>
+                                                                    <td>46</td>
+                                                                    <td>11:19:56</td>
+                                                                    <td>1m 50s</td>
                                                                     <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
+                                                                            <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
+                                                                                style="display:none">ERROR</span>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

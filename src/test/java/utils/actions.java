@@ -37,7 +37,7 @@ public class actions {
     }
 
     public void Click(By elementLocator) {
-        webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        webDriver.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         WebElement element = webDriver.getDriver().findElement(elementLocator);
         element.click();
     }
@@ -65,7 +65,7 @@ public class actions {
     }
 
     public boolean existElement(By element) {
-        webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        webDriver.getDriver().manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         if (webDriver.getDriver().findElement(element).isDisplayed()) {
             return true;
         }

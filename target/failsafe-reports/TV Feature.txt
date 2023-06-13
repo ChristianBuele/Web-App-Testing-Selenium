@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TV Feature
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.23 s - in TV Feature
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 38.233 s <<< FAILURE! - in TV Feature
+TV Feature.TV Feature  Time elapsed: 38.233 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using xpath=//*[contains(text(), 'TV Essential')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHRISTIANBUELE', ip: '60.60.100.222', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+
