@@ -10,11 +10,11 @@ Feature: TV Feature
     When Click on "Antigua" button
     When Await "3" seconds
     When Choose a "TV" option
-    When Select "Passport Number" from selectId "customer.identification.identificationType"
+    When Select "National ID" from selectId "customer.identification.identificationType"
     When Write "ASVRTDFG" in text box with id "customer.identification.identificationNumber"
     When Write "12/30/2026" in text box with id "customer.identification.expirationDate"
-    When Write "Steven" in text box with id "customer.firstName"
-    When Write "Rogers" in text box with id "customer.lastName"
+    When Write "Natasha" in text box with id "customer.firstName"
+    When Write "Romanof" in text box with id "customer.lastName"
     When Select "Taxable" from selectId "taxException"
     When Await "3" seconds
     When Click on "Save and Continue" button
@@ -27,10 +27,10 @@ Feature: TV Feature
     When Click on "Continue" button
     When Await "4" seconds
     When Click on "Continue" button
-    When Choose a "TV Max" option
+    When Await "2" seconds
+    When ChoosePlan in "/html/body/div/div/main/section/section/div[2]/div/div/div[2]/div" or "TV Max"
     When Click on "Continue" button
-    When Select items "Flow Sports Pack;Deutsche Welle"
-    When Await "6" seconds
+    When Await "2" seconds
     When Click on "Continue" button
     When Click on "Proceed to checkout" button
     When Select "Mr" from selectId "salutation"
@@ -46,6 +46,6 @@ Feature: TV Feature
     When Click on "Continue" button
     When Select schedule
     When Click on "Continue" button
-    When Await "3" seconds
+    When Await "2" seconds
     When Click on "Continue" button
-    When Click on "Accept" button
+    When Payment

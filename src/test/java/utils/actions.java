@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import settings.BrowserManager;
 
 import java.util.List;
+import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class actions {
@@ -107,13 +109,25 @@ public class actions {
     }
 
     public void selectSchedule(By element) {
-        webDriver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        List<WebElement> items = webDriver.getDriver().findElement(element).findElements(By.xpath("./child::*"));
-        System.out.println("Se realiza la busqueda de shecdules");
-        if (items.isEmpty() == false) {
-            System.out.println("Se hace click");
-            System.out.println(items.get(0).getText());
-            items.get(0).click();
+        webDriver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        WebElement schedulesItem = webDriver.getDriver().findElement(element);
+        List<WebElement> schedules = schedulesItem.findElements(By.xpath("./*"));
+        System.out.println("Existen " + schedules.size() + " horarios");
+        // for each in schedules
+        for (int i = 0; i <= schedules.size() - 1; ++i) {
+            WebElement schedule = schedules.get(i);
+            WebElement timeDiv = schedule.findElements(By.xpath("./*")).get(1);// para obtener el segundo div que tiene
+                                                                               // los horarios
+            List<WebElement> times = timeDiv.findElements(By.xpath("./*"));// slots de horarios
+            System.out.println("con " + times.size() + " slots");
+            if (times.size() > 0) {
+                System.out.println("Existen horarios. Eligiendo ...");
+                Random random = new Random();
+                int randomIndex = random.nextInt(times.size());
+                times.get(randomIndex).click();
+                // salir del for
+                break;
+            }
         }
     }
 
@@ -145,5 +159,62 @@ public class actions {
         // Selecciona la primera sugerencia
         input.sendKeys(Keys.ARROW_DOWN);
         input.sendKeys(Keys.ENTER);
+    }
+
+    public void selectRandomElement(By element) {
+        WebElement item = webDriver.getDriver().findElement(element);
+        List<WebElement> items = item.findElements(By.xpath("./*"));
+        int totalElements = items.size();
+        Random random = new Random();
+        int randomIndex = random.nextInt(totalElements);
+        WebElement selectedPlan = items.get(randomIndex);
+        WebElement name = selectedPlan.findElement(By.tagName("h2"));
+        System.out.println("El plan elegido es " + name.getText());
+        selectedPlan.click();
+    }
+
+    public String getText(By element) {
+        webDriver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+        WebElement button = webDriver.getDriver().findElement(By.xpath("/html/body/div/div/main/div/div[2]/button[2]"));
+        WebElement textElement = webDriver.getDriver().findElement(element);
+        System.out.println(textElement);
+        String number = textElement.getText().substring(textElement.getText().indexOf(":") + 1).trim();
+        return number;
+    }
+
+    public void changeWindow() {
+        Set<String> windowHandles = webDriver.getDriver().getWindowHandles();
+        String currentWindowHandle = webDriver.getDriver().getWindowHandle();
+        for (String windowHandle : windowHandles) {
+            if (!windowHandle.equals(currentWindowHandle)) {
+                webDriver.getDriver().switchTo().window(windowHandle);
+                break;
+            }
+        }
+        System.out.println("Título de la nueva pestaña: " + webDriver.getDriver().getTitle());
+
+        // Continuar con las acciones adicionales en la nueva pestañ
+    }
+
+    public void returnWindow() {
+        // Obtener el identificador de la ventana actual
+        String currentWindowHandle = webDriver.getDriver().getWindowHandle();
+
+        // Cerrar la pestaña actual
+        webDriver.getDriver().close();
+
+        // Cambiar el foco a la ventana anterior (si es necesario)
+        Set<String> windowHandles = webDriver.getDriver().getWindowHandles();
+        if (windowHandles.size() > 1) {
+            // Obtener el identificador de la ventana anterior
+            String previousWindowHandle = windowHandles.stream()
+                    .filter(handle -> !handle.equals(currentWindowHandle))
+                    .findFirst()
+                    .orElse(null);
+
+            if (previousWindowHandle != null) {
+                webDriver.getDriver().switchTo().window(previousWindowHandle);
+            }
+        }
     }
 }

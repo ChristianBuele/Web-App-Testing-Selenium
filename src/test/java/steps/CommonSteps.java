@@ -1,5 +1,6 @@
 package steps;
 
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,13 +8,14 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.*;
 import settings.Environment;
 import utils.actions;
-public class CommonSteps  extends actions{
+
+public class CommonSteps extends actions {
     WebDriver driver;
     Environment login = new Environment();
 
     // @After
     // public void LogoutLiberty(){
-    //     login.ClosedNavigation();
+    // login.ClosedNavigation();
     // }
     @Given("^Start Navigator$")
     public void iAmOnTheAutomationPage() throws Throwable {
@@ -21,81 +23,80 @@ public class CommonSteps  extends actions{
     }
 
     @Given("^Open develop console")
-    public void openConsole(){
+    public void openConsole() {
         openConsoleDevelop();
     }
 
     @When("^Write \"([^\"]*)\" in text box with id \"([^\"]*)\"$")
-    public void writeText(String text,String element){
-        By textBy=By.id(element);
-        writeText(textBy,text);
+    public void writeText(String text, String element) {
+        By textBy = By.id(element);
+        writeText(textBy, text);
     }
 
-    
     @When("^Click Custom \"([^\"]*)\" option$")
     public void chooseMarket(String path) throws Throwable {
-        By marketBy= By.xpath(path);
+        By marketBy = By.xpath(path);
         Click(marketBy);
     }
 
     @When("^Choose a \"([^\"]*)\" option$")
     public void chooseACustomOption(String optionName) throws Throwable {
-        System.out.println("Buscando "+optionName);
+        System.out.println("Buscando " + optionName);
         By optionBy = By.xpath("//*[contains(text(), '" + optionName + "')]");
         Click(optionBy);
-        System.out.println("Encontrado "+optionName);
+        System.out.println("Encontrado " + optionName);
     }
 
     @When("^Select \"([^\"]*)\" from selectId \"([^\"]*)\"")
-    public void selectOption(String optionName,String element){
-        By select=By.id(element);
-        SelectText(select,optionName);
+    public void selectOption(String optionName, String element) {
+        By select = By.id(element);
+        SelectText(select, optionName);
     }
+
     @When("^Select \"([^\"]*)\" radio button")
-    public void selectRadioButton(String id){
-        By select=By.id(id);
+    public void selectRadioButton(String id) {
+        By select = By.id(id);
         Click(select);
     }
 
     @When("^Select items \"([^\"]*)\"")
-    public void selectItems(String data){
-        String[] items=data.split(";");
+    public void selectItems(String data) {
+        String[] items = data.split(";");
         for (String item : items) {
-            By select=By.xpath("//*[contains(text(), '" + item + "')]");
+            By select = By.xpath("//*[contains(text(), '" + item + "')]");
             Click(select);
         }
     }
-    
 
-    @When("^Click on \"([^\"]*)\" button$")//continue or save and continue button or custom name
+    @When("^Click on \"([^\"]*)\" button$") // continue or save and continue button or custom name
     public void clickOnContinueButton(String buttonName) throws Throwable {
-        By buttonloginXpBy= By.xpath("//*[contains(text(), '" + buttonName + "')]");
+        By buttonloginXpBy = By.xpath("//*[contains(text(), '" + buttonName + "')]");
         ClickTest(buttonloginXpBy);
     }
-    @When("^Click on custom button \"([^\"]*)\"$")//continue or save and continue button or custom name
+
+    @When("^Click on custom button \"([^\"]*)\"$") // continue or save and continue button or custom name
     public void clickOnCustomButton(String path) throws Throwable {
         System.out.println("Custom button");
-        By buttonloginXpBy= By.xpath(path);
+        By buttonloginXpBy = By.xpath(path);
         Click(buttonloginXpBy);
     }
 
     @When("^Choose Power your products Addons")
     public void isChooseAddonsProduct() throws Throwable {
-        By choosAddonsProductByXPat = By.xpath("//*[@id='root']/div/main/section/section/div[2]/div/div/div/div[2]/div[2]/div/div[2]");
-        MultipleClick(choosAddonsProductByXPat,2);
+        By choosAddonsProductByXPat = By
+                .xpath("//*[@id='root']/div/main/section/section/div[2]/div/div/div/div[2]/div[2]/div/div[2]");
+        MultipleClick(choosAddonsProductByXPat, 2);
     }
-   
 
-    
     @When("^Verify Aditional Line")
     public void verifyAditionalLine() throws Throwable {
         By verifyAditionalLineByXPat = By.xpath("/html/body/div[2]/div/div[2]/div");
-        Boolean existElement= isElementPresent(verifyAditionalLineByXPat);
-        if(existElement){
+        Boolean existElement = isElementPresent(verifyAditionalLineByXPat);
+        if (existElement) {
             System.out.println("Element is present");
-            By returnCart=By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/button[1]");
+            By returnCart = By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/button[1]");
             Click(returnCart);
-        }else{
+        } else {
             System.out.println("Element is absent");
         }
     }
@@ -113,49 +114,83 @@ public class CommonSteps  extends actions{
     }
 
     @When("^Write \"([^\"]*)\" in area id \"([^\"]*)\"$")
-    public void inputArea(String areaName,String id ) throws Throwable {
-        By textBy=By.id(id);
-        writeText(textBy,areaName);
+    public void inputArea(String areaName, String id) throws Throwable {
+        By textBy = By.id(id);
+        writeText(textBy, areaName);
         Enter(textBy);
     }
 
     @When("^Click on credit card radio button$")
-    public void clickCreditCart () throws InterruptedException {
-        By elBy=By.xpath("/html/body/div/div/main/section/section/div[2]/div/div/div/div/form/div/div[1]/div[5]/div/div[2]/input");
+    public void clickCreditCart() throws InterruptedException {
+        By elBy = By.xpath(
+                "/html/body/div/div/main/section/section/div[2]/div/div/div/div/form/div/div[1]/div[5]/div/div[2]/input");
         Click(elBy);
     }
+
     @When("^Click on billing radio button$")
-    public void clickBilling () throws InterruptedException{
-        By elBy=By.xpath("/html/body/div/div/main/section/section/div[2]/div/div/div/div/form/div/div[1]/div[6]/div/div[1]/input");
+    public void clickBilling() throws InterruptedException {
+        By elBy = By.xpath(
+                "/html/body/div/div/main/section/section/div[2]/div/div/div/div/form/div/div[1]/div[6]/div/div[1]/input");
         Click(elBy);
     }
+
     @When("^Scan products$")
-    public void scanProducts() throws InterruptedException{
-        By product=By.xpath("//*[@id='root']/div/main/section/section/div[2]/div/div/section/div/div/div[2]/button");
+    public void scanProducts() throws InterruptedException {
+        By product = By.xpath("//*[@id='root']/div/main/section/section/div[2]/div/div/section/div/div/div[2]/button");
         Click(product);
     }
 
     @When("^Click on button with id \"([^\"]*)\"$")
     public void clickOnButtonWithId(String id) throws Throwable {
-        By elBy=By.id(id);
+        By elBy = By.id(id);
         Click(elBy);
     }
+
     @When("^Click on next bill radio button$")
-    public void clicNextBill () throws InterruptedException{
-        By elBy=By.xpath("/html/body/div/div/main/section/section/div[2]/div/section/div[2]/div/div[3]/h1[2]/div/div[2]/input");
+    public void clicNextBill() throws InterruptedException {
+        By elBy = By.xpath(
+                "/html/body/div/div/main/section/section/div[2]/div/section/div[2]/div/div[3]/h1[2]/div/div[2]/input");
         Click(elBy);
     }
 
     @When("^Close Navigator$")
-    public void closeNavigator(){
+    public void closeNavigator() {
         login.ClosedNavigation();
+    }
+
+    @When("^ChoosePlan in \"([^\"]*)\" or \"([^\"]*)\"$")
+    public void choosePlan(String path, String name) throws Throwable {
+        if (name.length() == 0) {
+            By element = By.xpath(path);
+            selectRandomElement(element);
+        }else{
+            chooseACustomOption(name);
+        }
     }
 
     @When("^Await \"([^\"]*)\" seconds")
     public void awaitSeconds(String dataString) throws InterruptedException {
-        //String to int
+        // String to int
         int seconds = Integer.parseInt(dataString);
-        Thread.sleep(seconds*1000);
-        System.out.println("Await "+seconds+" seconds");
+        Thread.sleep(seconds * 1000);
+        System.out.println("Await " + seconds + " seconds");
     }
+
+    @When("^Payment")
+    public void payment() throws Throwable {
+        By element = By.xpath("/html/body/div/div/main/div/div[1]");
+        String accountId = getText(element);
+        System.out.println("La cuenta a pagar es:" + accountId);
+        By paymentButtonElement=By.xpath("//*[@id=\"root\"]/div/main/aside/div[1]/button[9]");
+        Click(paymentButtonElement);
+        changeWindow();
+        selectOption("Antigua Dummy Cashier", "store");
+        By amount=By.xpath("/html/body/div/div/main/section/section/div[2]/div/form/div/div/div[3]/div/input");
+        writeText(amount, "2");
+        writeText(accountId,"account" );
+        clickOnContinueButton("Continue");//payment
+        returnWindow();
+    }
+
+   
 }
