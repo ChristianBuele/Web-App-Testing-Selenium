@@ -109,7 +109,7 @@ public class actions {
     }
 
     public void selectSchedule(By element) {
-        webDriver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        webDriver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement schedulesItem = webDriver.getDriver().findElement(element);
         List<WebElement> schedules = schedulesItem.findElements(By.xpath("./*"));
         System.out.println("Existen " + schedules.size() + " horarios");
