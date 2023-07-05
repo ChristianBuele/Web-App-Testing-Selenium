@@ -3,18 +3,21 @@ Feature: TV Feature
     Given Start Navigator
   Scenario: TV Feature
     When Open develop console
-    When Write "ocastro@flow.com" in text box with id "username"
-    When Write "12345" in text box with id "password"
+    When Write "juan.salcedo@amdocs.com" in text box with id "username"
+    When Write "Password01" in text box with id "password"
     When Click on Sing In button
-    When Await "3" seconds
+    When Await "2" seconds
     When Click on "Antigua" button
-    When Await "3" seconds
+    When Await "2" seconds
+    When Select "Residential" from selectId "segment"
+    When Click on "Continue" button
+    When Await "1" seconds
     When Choose a "TV" option
     When Select "National ID" from selectId "customer.identification.identificationType"
-    When Write "ASVRTDFG" in text box with id "customer.identification.identificationNumber"
+    When Write "FROMNATIONAL" in text box with id "customer.identification.identificationNumber"
     When Write "12/30/2026" in text box with id "customer.identification.expirationDate"
-    When Write "Natasha" in text box with id "customer.firstName"
-    When Write "Romanof" in text box with id "customer.lastName"
+    When Write "Bruce" in text box with id "customer.firstName"
+    When Write "Banner" in text box with id "customer.lastName"
     When Select "Taxable" from selectId "taxException"
     When Await "3" seconds
     When Click on "Save and Continue" button
@@ -28,9 +31,9 @@ Feature: TV Feature
     When Await "4" seconds
     When Click on "Continue" button
     When Await "2" seconds
-    When ChoosePlan in "/html/body/div/div/main/section/section/div[2]/div/div/div[2]/div" or "TV Max"
+    When ChoosePlan in "/html/body/div/div/main/section/section/div[2]/div/div/div[2]/div" or ""
     When Click on "Continue" button
-    When Await "2" seconds
+    When Await "10" seconds
     When Click on "Continue" button
     When Click on "Proceed to checkout" button
     When Select "Mr" from selectId "salutation"

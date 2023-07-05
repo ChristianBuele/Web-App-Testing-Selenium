@@ -1,0 +1,9 @@
+//request soft
+<Root xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:q0="http://www.comverse.com"><ResponseTo>http://172.30.160.23:8051/WorkOrderUpdate/WorkOrderUpdate
+
+{"isResetPin":true,"soid":"535852501072023150055||||63","transactionId":"535852501072023150055____63","accountInternalId":"5983609","accountExternalId":"2061127837","marketCode":"20","orderId":"","orderType":"","serviceOrderId":"","createdBy":"","hubTV":false,"nodeId":"","firstName":"TESTING 2","lastName":"STB B","type":"HFC_TV","serviceExternalId":"DV0001302296","technology":"HFC","inventoryExternalId":"H40CW0410484","serialNumber":"H40CW0410484","unitAddress":"000AC3782A5C","chiplId":"00682391538","smartCardId":"01713834081","manufacture":"CONAX","model":"MOCA","serviceActions":[{"action":"Def","offerId":"51015821","offerName":"HBO MAX"},{"action":"ResetPin","offerId":"51011889"}]}
+
+//response
+<jsonObject><TransactionId>535852501072023150055____63</TransactionId><Status>Received</Status></jsonObject>
+
+{"code":"200","message":"Received","data":{"transactionId":"535852501072023150055____63"}}

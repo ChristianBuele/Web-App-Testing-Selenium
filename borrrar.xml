@@ -1,402 +1,320 @@
 <ns1:utQueryResponse xmlns:ns1="http://accesscare/ws">
-    <ns1:keyInfo>
-        <ns1:sourceSystem>WEBSITE</ns1:sourceSystem>
-        <ns1:password>WEBSITE123</ns1:password>
-        <ns1:userId>WEBSITE</ns1:userId>
-        <ns1:ticketType>SERVORD</ns1:ticketType>
-        <ns1:activeHistory>active</ns1:activeHistory>
-        <ns1:recordId>369472043</ns1:recordId>
-    </ns1:keyInfo>
-    <ns1:responseStatus>
-        <ns1:statusCode>0</ns1:statusCode>
-        <ns1:statusDescription>OK</ns1:statusDescription>
-    </ns1:responseStatus>
-    <ns1:ticket>
-        <ns1:AccountTicket>
-            <ns1:master_key>2668650</ns1:master_key>
-            <ns1:record_id>369472043</ns1:record_id>
-            <ns1:created_time>20230622 184032</ns1:created_time>
-            <ns1:swd />
-            <ns1:last_modified>20230622 184032</ns1:last_modified>
-            <ns1:last_modified_by>ACADMIN</ns1:last_modified_by>
-            <ns1:record_source>MANUAL</ns1:record_source>
-            <ns1:contr_expiry_date />
-            <ns1:report_cnt>0</ns1:report_cnt>
-            <ns1:history_cnt>0</ns1:history_cnt>
-            <ns1:genesys_ts />
-            <ns1:UtAddress />
-        </ns1:AccountTicket>
-        <ns1:genInfo>
-            <ns1:recordId>369472043</ns1:recordId>
-            <ns1:taskType>SERVORD</ns1:taskType>
-            <ns1:masterKey>2668648</ns1:masterKey>
-            <ns1:ticketNumber>2023062200493249</ns1:ticketNumber>
-            <ns1:receivedTime>20230622 184032</ns1:receivedTime>
-            <ns1:sourceSystem>BTC</ns1:sourceSystem>
-            <ns1:repeatCnt>0</ns1:repeatCnt>
-            <ns1:chronicCnt>0</ns1:chronicCnt>
-            <ns1:subsequentCnt>0</ns1:subsequentCnt>
-            <ns1:activityTime />
-            <ns1:patternTime />
-            <ns1:potentialTime />
-            <ns1:actPatDetails />
-            <ns1:outageHours>0.37555555</ns1:outageHours>
-            <ns1:queue>FIELD</ns1:queue>
-            <ns1:status>ASSIGNED</ns1:status>
-            <ns1:dispatchCnt>0</ns1:dispatchCnt>
-            <ns1:diagnoseCnt>0</ns1:diagnoseCnt>
-            <ns1:custName>ROMANOF NATASHA</ns1:custName>
-        </ns1:genInfo>
-        <ns1:report>
-            <ns1:reportTitle>NEW SERVICE ORDER REQUEST</ns1:reportTitle>
-            <ns1:category>1</ns1:category>
-            <ns1:categoryDesc1>1 - Directly To FLOW By Customer</ns1:categoryDesc1>
-            <ns1:categoryDesc2>1 - Directly To FLOW By Customer</ns1:categoryDesc2>
-            <ns1:reportType>NI1STB</ns1:reportType>
-            <ns1:reportTypeDesc1>New TV Installation with 1 STB</ns1:reportTypeDesc1>
-            <ns1:reportTypeDesc2>New TV Installation with 1 STB</ns1:reportTypeDesc2>
-            <ns1:skill>TV_I</ns1:skill>
-            <ns1:priority>1</ns1:priority>
-            <ns1:priorityDesc1>1 - Immediate Response</ns1:priorityDesc1>
-            <ns1:priorityDesc2>1 - Immediate Response</ns1:priorityDesc2>
-            <ns1:servClass>HFC-R</ns1:servClass>
-            <ns1:oos>2</ns1:oos>
-            <ns1:ir>0</ns1:ir>
-            <ns1:wasWorkingInd>1</ns1:wasWorkingInd>
-            <ns1:ewt>60</ns1:ewt>
-            <ns1:ect>20230628 170000</ns1:ect>
-            <ns1:eod>20230628 210000</ns1:eod>
-            <ns1:apptFrom>20230628 080000</ns1:apptFrom>
-            <ns1:apptTo>20230628 170000</ns1:apptTo>
-            <ns1:apptWin>AD</ns1:apptWin>
-            <ns1:oaEct>20230628 170000</ns1:oaEct>
-            <ns1:oaEod>20230628 210000</ns1:oaEod>
-            <ns1:oaApptFrom>20230628 080000</ns1:oaApptFrom>
-            <ns1:oaApptTo>20230628 170000</ns1:oaApptTo>
-            <ns1:oaApptWin>AD</ns1:oaApptWin>
-            <ns1:contName>ROMANOF NATASHA</ns1:contName>
-            <ns1:cont_preference>CONTPFR3</ns1:cont_preference>
-            <ns1:contEmail>test@gmai.com</ns1:contEmail>
-            <ns1:contPhone>0985631653</ns1:contPhone>
-            <ns1:notifyLanguage>E</ns1:notifyLanguage>
-            <ns1:rsb>ANU</ns1:rsb>
-            <ns1:district>AGWEST</ns1:district>
-            <ns1:section>AGWEST</ns1:section>
-            <ns1:gb>AGWEST</ns1:gb>
-            <ns1:wfasDispatchId>1634228</ns1:wfasDispatchId>
-            <ns1:historySummary />
-            <ns1:requested_date>20230622 174032</ns1:requested_date>
-            <ns1:requested_win>2H</ns1:requested_win>
-        </ns1:report>
-        <ns1:misc>
-            <ns1:custName>ROMANOF NATASHA</ns1:custName>
-        </ns1:misc>
-        <ns1:address>
-            <ns1:streetNumber>BSN-21WQ</ns1:streetNumber>
-            <ns1:streetName>BARNES HILL VILLAGE</ns1:streetName>
-            <ns1:pc>Antgua</ns1:pc>
-            <ns1:city>ST. GEORGE </ns1:city>
-            <ns1:country>Antigua</ns1:country>
-            <ns1:longitude>0.0</ns1:longitude>
-            <ns1:latitude>0.0</ns1:latitude>
-        </ns1:address>
-        <ns1:route>
-            <ns1:queue>FIELD</ns1:queue>
-            <ns1:status>ASSIGNED</ns1:status>
-            <ns1:userId>ANU4014</ns1:userId>
-            <ns1:routingComment>3ANU4014</ns1:routingComment>
-            <ns1:lastRoutedTime>20230622 184656</ns1:lastRoutedTime>
-            <ns1:lastRoutedBy>ACADMIN</ns1:lastRoutedBy>
-        </ns1:route>
-        <ns1:UtAlias>
-            <ns1:primary_key>1981590</ns1:primary_key>
-            <ns1:master_key>2668648</ns1:master_key>
-            <ns1:rec_type>SERVORD</ns1:rec_type>
-            <ns1:alias>493249</ns1:alias>
-        </ns1:UtAlias>
-        <ns1:UtAlias>
-            <ns1:primary_key>1981640</ns1:primary_key>
-            <ns1:master_key>2668648</ns1:master_key>
-            <ns1:rec_type>SERVORD</ns1:rec_type>
-            <ns1:alias>D-1634229</ns1:alias>
-        </ns1:UtAlias>
-        <ns1:userFlgFld />
-        <ns1:clearing>
-            <ns1:clearTime />
-            <ns1:closedTime />
-            <ns1:workedOnType>0</ns1:workedOnType>
-            <ns1:workedOn>0</ns1:workedOn>
-            <ns1:workedOnSubcode>0</ns1:workedOnSubcode>
-            <ns1:found>0</ns1:found>
-            <ns1:cause>0</ns1:cause>
-            <ns1:resolution>0</ns1:resolution>
-        </ns1:clearing>
-        <ns1:ticketFlow>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:userId>ACADMIN</ns1:userId>
-            <ns1:fromQueue>FIELD</ns1:fromQueue>
-            <ns1:fromStatus>ASSIGNED</ns1:fromStatus>
-            <ns1:fromTime>20230622 184621</ns1:fromTime>
-            <ns1:toQueue>FIELD</ns1:toQueue>
-            <ns1:toStatus>ASSIGNED</ns1:toStatus>
-            <ns1:toTime>20230622 184656</ns1:toTime>
-            <ns1:seizeDurMin>1</ns1:seizeDurMin>
-            <ns1:outageInd>0</ns1:outageInd>
-            <ns1:routeComment>3ANU4014</ns1:routeComment>
-            <ns1:component>TASK</ns1:component>
-            <ns1:toUserid>ANU4014</ns1:toUserid>
-        </ns1:ticketFlow>
-        <ns1:ticketFlow>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:userId>ACADMIN</ns1:userId>
-            <ns1:fromQueue>FIELD</ns1:fromQueue>
-            <ns1:fromStatus>CREATION</ns1:fromStatus>
-            <ns1:fromTime>20230622 184032</ns1:fromTime>
-            <ns1:toQueue>FIELD</ns1:toQueue>
-            <ns1:toStatus>NEW</ns1:toStatus>
-            <ns1:toTime>20230622 184032</ns1:toTime>
-            <ns1:seizeDurMin>0</ns1:seizeDurMin>
-            <ns1:outageInd>0</ns1:outageInd>
-            <ns1:routeComment />
-            <ns1:component>TASK</ns1:component>
-            <ns1:toUserid>ACADMIN</ns1:toUserid>
-        </ns1:ticketFlow>
-        <ns1:dispatch action="Insert">
-            <ns1:dispatchId>1634229</ns1:dispatchId>
-            <ns1:techName>JAYCE SIMON</ns1:techName>
-            <ns1:lastPageTime />
-            <ns1:dispatchTime />
-            <ns1:outageDur>0</ns1:outageDur>
-            <ns1:fieldTechDispatched>0</ns1:fieldTechDispatched>
-            <ns1:map>0</ns1:map>
-            <ns1:na>0</ns1:na>
-            <ns1:naTime />
-            <ns1:redispatchRequired>0</ns1:redispatchRequired>
-            <ns1:requestedBy>ACADMIN</ns1:requestedBy>
-            <ns1:requestedTime>20230622 184032</ns1:requestedTime>
-            <ns1:ldt />
-            <ns1:co_attended>0</ns1:co_attended>
-            <ns1:dispatchType>FIELD</ns1:dispatchType>
-            <ns1:assignJobTo>ANU4014</ns1:assignJobTo>
-        </ns1:dispatch>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>cust_name</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>country</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>city</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>pc</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>street_name</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>street_number</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>appt_win</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>appt_to</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>report_title</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>category</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>report_type</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>skill</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>status</ns1:fieldName>
-            <ns1:fieldValue>CREATION</ns1:fieldValue>
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>priority</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>serv_class</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>gb</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>cont_name</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>cont_preference</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>cont_email</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>notify_language</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>cont_phone</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>eod</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184032</ns1:timestamp>
-            <ns1:fieldName>appt_from</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>auto_dispatch</ns1:fieldName>
-            <ns1:fieldValue>0</ns1:fieldValue>
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>tech_name</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>tech_id</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>assign_job_to</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>auto_dispatch</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>routing_comment</ns1:fieldName>
-            <ns1:fieldValue />
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>userid</ns1:fieldName>
-            <ns1:fieldValue>ACADMIN</ns1:fieldValue>
-        </ns1:auditLog>
-        <ns1:auditLog>
-            <ns1:userid>ACADMIN</ns1:userid>
-            <ns1:timestamp>20230622 184656</ns1:timestamp>
-            <ns1:fieldName>status</ns1:fieldName>
-            <ns1:fieldValue>NEW</ns1:fieldValue>
-        </ns1:auditLog>
-        <ns1:UtSoTicket>
-            <ns1:application_date />
-            <ns1:taken_by>ACADMIN</ns1:taken_by>
-            <ns1:order_desc>account=4000033729,stb quantity=1</ns1:order_desc>
-            <ns1:cable_assignment />
-            <ns1:record_key>DV000041360</ns1:record_key>
-        </ns1:UtSoTicket>
-        <ns1:UtSoCivAdd>
-            <ns1:primary_key>1135</ns1:primary_key>
-            <ns1:master_key>2668648</ns1:master_key>
-            <ns1:suite>BSN-21WQ </ns1:suite>
-            <ns1:street_name>BARNES HILL VILLAGE</ns1:street_name>
-            <ns1:city>ST. GEORGE </ns1:city>
-            <ns1:prov>BARNES HILL VILLAGE </ns1:prov>
-            <ns1:UtSoLine>
-                <ns1:primary_key>1095</ns1:primary_key>
-                <ns1:master_key>2668648</ns1:master_key>
-                <ns1:civadd_key>1135</ns1:civadd_key>
-                <ns1:line_action>I</ns1:line_action>
-                <ns1:tn>DV000041360</ns1:tn>
-                <ns1:serv_class>HFC-R</ns1:serv_class>
-                <ns1:node_clli>AG-00-002</ns1:node_clli>
-                <ns1:UtSoCable>
-                    <ns1:primary_key>1095</ns1:primary_key>
-                    <ns1:master_key>2668648</ns1:master_key>
-                    <ns1:lineass_key>1095</ns1:lineass_key>
-                    <ns1:ca_grp_no>1</ns1:ca_grp_no>
-                    <ns1:cable_action>I</ns1:cable_action>
-                    <ns1:segment>1</ns1:segment>
-                    <ns1:tl>ALLSAINTS/AMERICAN ROAD</ns1:tl>
-                </ns1:UtSoCable>
-            </ns1:UtSoLine>
-        </ns1:UtSoCivAdd>
-    </ns1:ticket>
+	<ns1:keyInfo>
+		<ns1:sourceSystem>WEBSITE</ns1:sourceSystem>
+		<ns1:password>WEBSITE123</ns1:password>
+		<ns1:userId>WEBSITE</ns1:userId>
+		<ns1:ticketType>SERVORD</ns1:ticketType>
+		<ns1:activeHistory>active</ns1:activeHistory>
+		<ns1:recordId>372142043</ns1:recordId>
+	</ns1:keyInfo>
+	<ns1:responseStatus>
+		<ns1:statusCode>0</ns1:statusCode>
+		<ns1:statusDescription>OK</ns1:statusDescription>
+	</ns1:responseStatus>
+	<ns1:ticket>
+		<ns1:AccountTicket>
+			<ns1:master_key>2670015</ns1:master_key>
+			<ns1:record_id>372142043</ns1:record_id>
+			<ns1:created_time>20230704 160236</ns1:created_time>
+			<ns1:swd />
+			<ns1:last_modified>20230704 160236</ns1:last_modified>
+			<ns1:last_modified_by>ACADMIN</ns1:last_modified_by>
+			<ns1:record_source>MANUAL</ns1:record_source>
+			<ns1:contr_expiry_date />
+			<ns1:report_cnt>0</ns1:report_cnt>
+			<ns1:history_cnt>0</ns1:history_cnt>
+			<ns1:genesys_ts />
+			<ns1:UtAddress />
+		</ns1:AccountTicket>
+		<ns1:genInfo>
+			<ns1:recordId>372142043</ns1:recordId>
+			<ns1:taskType>SERVORD</ns1:taskType>
+			<ns1:masterKey>2670013</ns1:masterKey>
+			<ns1:ticketNumber>2023070400493808</ns1:ticketNumber>
+			<ns1:receivedTime>20230704 160235</ns1:receivedTime>
+			<ns1:sourceSystem>BTC</ns1:sourceSystem>
+			<ns1:repeatCnt>0</ns1:repeatCnt>
+			<ns1:chronicCnt>0</ns1:chronicCnt>
+			<ns1:subsequentCnt>0</ns1:subsequentCnt>
+			<ns1:activityTime />
+			<ns1:patternTime />
+			<ns1:potentialTime />
+			<ns1:actPatDetails />
+			<ns1:outageHours>0.7052778</ns1:outageHours>
+			<ns1:queue>FIELD</ns1:queue>
+			<ns1:status>NEW</ns1:status>
+			<ns1:dispatchCnt>0</ns1:dispatchCnt>
+			<ns1:diagnoseCnt>0</ns1:diagnoseCnt>
+			<ns1:custName>BANNER BRUCE</ns1:custName>
+		</ns1:genInfo>
+		<ns1:report>
+			<ns1:reportTitle>NEW SERVICE ORDER REQUEST</ns1:reportTitle>
+			<ns1:category>1</ns1:category>
+			<ns1:categoryDesc1>1 - Directly To FLOW By Customer</ns1:categoryDesc1>
+			<ns1:categoryDesc2>1 - Directly To FLOW By Customer</ns1:categoryDesc2>
+			<ns1:reportType>NITV</ns1:reportType>
+			<ns1:reportTypeDesc1>New TV Installation</ns1:reportTypeDesc1>
+			<ns1:reportTypeDesc2>New TV Installation</ns1:reportTypeDesc2>
+			<ns1:priority>1</ns1:priority>
+			<ns1:priorityDesc1>1 - Immediate Response</ns1:priorityDesc1>
+			<ns1:priorityDesc2>1 - Immediate Response</ns1:priorityDesc2>
+			<ns1:oos>2</ns1:oos>
+			<ns1:ir>0</ns1:ir>
+			<ns1:wasWorkingInd>1</ns1:wasWorkingInd>
+			<ns1:ewt>60</ns1:ewt>
+			<ns1:ect>20230705 170000</ns1:ect>
+			<ns1:eod>20230705 220000</ns1:eod>
+			<ns1:apptFrom>20230705 080000</ns1:apptFrom>
+			<ns1:apptTo>20230705 170000</ns1:apptTo>
+			<ns1:apptWin>AD</ns1:apptWin>
+			<ns1:oaEct>20230705 170000</ns1:oaEct>
+			<ns1:oaEod>20230705 220000</ns1:oaEod>
+			<ns1:oaApptFrom>20230705 080000</ns1:oaApptFrom>
+			<ns1:oaApptTo>20230705 170000</ns1:oaApptTo>
+			<ns1:oaApptWin>AD</ns1:oaApptWin>
+			<ns1:contName>BANNER BRUCE</ns1:contName>
+			<ns1:cont_preference>CONTPFR3</ns1:cont_preference>
+			<ns1:contEmail>test@gmai.com</ns1:contEmail>
+			<ns1:contPhone>0985631653</ns1:contPhone>
+			<ns1:notifyLanguage>E</ns1:notifyLanguage>
+			<ns1:rsb>ANU</ns1:rsb>
+			<ns1:district>AGWEST</ns1:district>
+			<ns1:section>AGWEST</ns1:section>
+			<ns1:gb>AGWEST</ns1:gb>
+			<ns1:wfasDispatchId>1635246</ns1:wfasDispatchId>
+			<ns1:historySummary />
+			<ns1:requested_date>20230704 150236</ns1:requested_date>
+			<ns1:requested_win>2H</ns1:requested_win>
+		</ns1:report>
+		<ns1:misc>
+			<ns1:custName>BANNER BRUCE</ns1:custName>
+		</ns1:misc>
+		<ns1:address>
+			<ns1:streetNumber>BSN-21WQ</ns1:streetNumber>
+			<ns1:streetName>BARNES HILL VILLAGE</ns1:streetName>
+			<ns1:pc>Antgua</ns1:pc>
+			<ns1:city>ST. GEORGE </ns1:city>
+			<ns1:country>Antigua</ns1:country>
+			<ns1:longitude>0.0</ns1:longitude>
+			<ns1:latitude>0.0</ns1:latitude>
+		</ns1:address>
+		<ns1:route>
+			<ns1:queue>FIELD</ns1:queue>
+			<ns1:status>NEW</ns1:status>
+			<ns1:userId>ACADMIN</ns1:userId>
+			<ns1:lastRoutedTime>20230704 160236</ns1:lastRoutedTime>
+			<ns1:lastRoutedBy>ACADMIN</ns1:lastRoutedBy>
+		</ns1:route>
+		<ns1:UtAlias>
+			<ns1:primary_key>2032490</ns1:primary_key>
+			<ns1:master_key>2670013</ns1:master_key>
+			<ns1:rec_type>SERVORD</ns1:rec_type>
+			<ns1:alias>493808</ns1:alias>
+		</ns1:UtAlias>
+		<ns1:UtAlias>
+			<ns1:primary_key>2032540</ns1:primary_key>
+			<ns1:master_key>2670013</ns1:master_key>
+			<ns1:rec_type>SERVORD</ns1:rec_type>
+			<ns1:alias>D-1635247</ns1:alias>
+		</ns1:UtAlias>
+		<ns1:userFlgFld />
+		<ns1:clearing>
+			<ns1:clearTime />
+			<ns1:closedTime />
+			<ns1:workedOnType>0</ns1:workedOnType>
+			<ns1:workedOn>0</ns1:workedOn>
+			<ns1:workedOnSubcode>0</ns1:workedOnSubcode>
+			<ns1:found>0</ns1:found>
+			<ns1:cause>0</ns1:cause>
+			<ns1:resolution>0</ns1:resolution>
+		</ns1:clearing>
+		<ns1:ticketFlow>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:userId>ACADMIN</ns1:userId>
+			<ns1:fromQueue>FIELD</ns1:fromQueue>
+			<ns1:fromStatus>CREATION</ns1:fromStatus>
+			<ns1:fromTime>20230704 160236</ns1:fromTime>
+			<ns1:toQueue>FIELD</ns1:toQueue>
+			<ns1:toStatus>NEW</ns1:toStatus>
+			<ns1:toTime>20230704 160236</ns1:toTime>
+			<ns1:seizeDurMin>0</ns1:seizeDurMin>
+			<ns1:outageInd>0</ns1:outageInd>
+			<ns1:routeComment />
+			<ns1:component>TASK</ns1:component>
+			<ns1:toUserid>ACADMIN</ns1:toUserid>
+		</ns1:ticketFlow>
+		<ns1:dispatch action="Insert">
+			<ns1:dispatchId>1635247</ns1:dispatchId>
+			<ns1:lastPageTime />
+			<ns1:dispatchTime />
+			<ns1:outageDur>0</ns1:outageDur>
+			<ns1:fieldTechDispatched>0</ns1:fieldTechDispatched>
+			<ns1:map>0</ns1:map>
+			<ns1:na>0</ns1:na>
+			<ns1:naTime />
+			<ns1:redispatchRequired>0</ns1:redispatchRequired>
+			<ns1:requestedBy>ACADMIN</ns1:requestedBy>
+			<ns1:requestedTime>20230704 160236</ns1:requestedTime>
+			<ns1:ldt />
+			<ns1:co_attended>0</ns1:co_attended>
+			<ns1:dispatchType>FIELD</ns1:dispatchType>
+		</ns1:dispatch>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>report_title</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>gb</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>report_type</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>status</ns1:fieldName>
+			<ns1:fieldValue>CREATION</ns1:fieldValue>
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>priority</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>cust_name</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>cont_name</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>cont_preference</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>cont_email</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>notify_language</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>cont_phone</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>eod</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>appt_from</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>appt_to</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>appt_win</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>street_number</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>street_name</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>pc</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>city</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>country</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:auditLog>
+			<ns1:userid>ACADMIN</ns1:userid>
+			<ns1:timestamp>20230704 160236</ns1:timestamp>
+			<ns1:fieldName>category</ns1:fieldName>
+			<ns1:fieldValue />
+		</ns1:auditLog>
+		<ns1:UtSoTicket>
+			<ns1:application_date />
+			<ns1:taken_by>ACADMIN</ns1:taken_by>
+			<ns1:order_desc>account=4000034902,stb quantity=1</ns1:order_desc>
+			<ns1:cable_assignment />
+			<ns1:record_key>DV000044177</ns1:record_key>
+		</ns1:UtSoTicket>
+		<ns1:UtSoCivAdd>
+			<ns1:primary_key>1694</ns1:primary_key>
+			<ns1:master_key>2670013</ns1:master_key>
+			<ns1:suite>BSN-21WQ </ns1:suite>
+			<ns1:street_name>BARNES HILL VILLAGE</ns1:street_name>
+			<ns1:city>ST. GEORGE </ns1:city>
+			<ns1:prov>BARNES HILL VILLAGE </ns1:prov>
+			<ns1:UtSoLine>
+				<ns1:primary_key>1654</ns1:primary_key>
+				<ns1:master_key>2670013</ns1:master_key>
+				<ns1:civadd_key>1694</ns1:civadd_key>
+				<ns1:line_action>I</ns1:line_action>
+				<ns1:tn>DV000044177</ns1:tn>
+				<ns1:node_clli>AG-00-002</ns1:node_clli>
+				<ns1:UtSoCable>
+					<ns1:primary_key>1654</ns1:primary_key>
+					<ns1:master_key>2670013</ns1:master_key>
+					<ns1:lineass_key>1654</ns1:lineass_key>
+					<ns1:ca_grp_no>1</ns1:ca_grp_no>
+					<ns1:cable_action>I</ns1:cable_action>
+					<ns1:segment>1</ns1:segment>
+				</ns1:UtSoCable>
+			</ns1:UtSoLine>
+		</ns1:UtSoCivAdd>
+	</ns1:ticket>
 </ns1:utQueryResponse>
